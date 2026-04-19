@@ -20,7 +20,7 @@ await build({
   logLevel: "error",
   
  external: [
-//  'worker_threads',
+  'worker_threads',
 //  'fs',
 //  'path',
 //  'os',

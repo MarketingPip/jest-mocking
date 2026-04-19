@@ -12,6 +12,7 @@
     "@sinonjs/fake-timers": "^11.2.0"
   },
   "devDependencies": {
-    "esbuild": "^0.21.0"
+    "esbuild": "^0.21.0",
+    "esbuild-plugins-node-modules-polyfill": "^1.8.1"
   }
 }

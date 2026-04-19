@@ -5,10 +5,10 @@ await build({
   entryPoints: ["src/index.js"],
   outfile: "dist/jest.umd.js",
   bundle: true,
-  format: "iife",
+  format: "esm",
   globalName: "browserJest",
   platform: "browser",
-  target: "esnext",
+  target: "es2020",
   minify: true,
 
   define: {

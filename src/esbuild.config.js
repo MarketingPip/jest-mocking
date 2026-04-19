@@ -19,15 +19,6 @@ await build({
 
   logLevel: "error",
   
- external: [
-  'worker_threads',
-//  'fs',
-//  'path',
-//  'os',
-  'jest-worker',
-  'write-file-atomic'
-],
-  
   plugins: [
     nodeModulesPolyfillPlugin({
       globals: {

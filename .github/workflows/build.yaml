@@ -23,12 +23,12 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install deps
-        run: npm ci
+ 
 
       - name: Build
         run: |
           npm install patch-package
+          npm ci
           npm run build
 
       - name: Commit built file

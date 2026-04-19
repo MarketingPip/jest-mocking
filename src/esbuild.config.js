@@ -19,11 +19,11 @@ await build({
 
   logLevel: "error",
   external: [
- // 'worker_threads',
+  'worker_threads',
 //  'fs',
 //  'path',
 //  'os',
-  'jest-worker',
+ // 'jest-worker',
  // 'write-file-atomic'
 ],
   plugins: [

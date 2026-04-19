@@ -5,7 +5,7 @@ await build({
   bundle: true,
   minify: true,
   entryPoints: ["src/index.js"],
-  outfile: "dist/jest.umd.js",
+  outfile: "dist/jest.min.js",
 
   format: "esm", // IMPORTANT: match browser usage
   globalName: "browserJest",

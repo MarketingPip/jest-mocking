@@ -5,7 +5,7 @@ await build({
   outfile: "dist/jest.min.js",
   bundle: true,
   format: "esm",           // change to "iife" if you want browser global
-  platform: "browser",     // your code targets browser-like env
+  platform: "esm",     // your code targets browser-like env
   target: ["es2020"],
   minify: true,
   sourcemap: false,

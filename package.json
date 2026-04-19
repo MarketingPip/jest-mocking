@@ -13,6 +13,6 @@
   },
   "devDependencies": {
     "esbuild": "^0.21.0",
-    "esbuild-plugins-node-modules-polyfill": "^1.8.1"
+    "esbuild-plugins-node-modules-polyfill": "^1.6.1"
   }
 }

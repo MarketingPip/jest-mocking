@@ -6,8 +6,8 @@
   "author": "Hatem Hosny",
   "license": "MIT",
   "keywords": [],
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "main": "dist/jest.min.js",
+  "module": "dist/jest.min.js",
   "source": "src/index.js",
   "scripts": {
     "build": "node src/esbuild.config.js",

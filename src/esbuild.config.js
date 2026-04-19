@@ -7,7 +7,7 @@ await build({
   entryPoints: ["src/index.js"],
   outfile: "dist/jest.umd.js",
 
-  format: "iife", // IMPORTANT: match browser usage
+  format: "esm", // IMPORTANT: match browser usage
   globalName: "browserJest",
 
   define: {

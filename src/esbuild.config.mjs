@@ -23,7 +23,6 @@ async function run() {
       },
     }),
   ],
-  outdir: 'dist',
 });
 }
 

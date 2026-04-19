@@ -1,7 +1,7 @@
-import expect from "expect@29";
-import * as jestMock from "jest-mock@29";
-import jestCircus from "jest-circus@29";
-import FakeTimers from "@sinonjs/fake-timers@11";
+import expect from "expect";
+import * as jestMock from "jest-mock";
+import jestCircus from "jest-circus";
+import FakeTimers from "@sinonjs/fake-timers";
 
 // ─── Bootstrap expect ────────────────────────────────────────────────────────
 expect.extend({});

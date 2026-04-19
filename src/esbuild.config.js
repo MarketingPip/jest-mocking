@@ -23,7 +23,7 @@ await build({
 //  'fs',
 //  'path',
 //  'os',
- // 'jest-worker',
+ 'jest-worker',
  // 'write-file-atomic'
 ],
   plugins: [

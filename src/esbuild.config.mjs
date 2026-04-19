@@ -6,7 +6,7 @@ await build({
   bundle: true,
   format: "esm",           // change to "iife" if you want browser global
   platform: "browser",     // your code targets browser-like env
-  target: ["es2020"],
+  target: ["esnext"],
   minify: true,
   sourcemap: false,
 

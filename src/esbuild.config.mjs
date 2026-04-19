@@ -8,7 +8,7 @@ await build({
   format: "esm",
   globalName: "browserJest",
   platform: "browser",
-  target: "es2020",
+  target: "es2022",
   minify: true,
 
   define: {

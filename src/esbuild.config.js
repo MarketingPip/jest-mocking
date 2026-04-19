@@ -24,7 +24,7 @@ external: [
 //  'fs',
 //  'path',
 //  'os',
-//  'jest-worker',
+  'jest-worker',
   'write-file-atomic'
 ],
   

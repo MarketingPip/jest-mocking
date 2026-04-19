@@ -19,14 +19,20 @@ await build({
 
   logLevel: "error",
 
-external: [
+resolve: {
+  alias: {
+    worker_threads: "node-modules-polyfills/worker_threads"
+  }
+},
+  
+/* external: [
   'worker_threads',
 //  'fs',
 //  'path',
 //  'os',
   'jest-worker',
   'write-file-atomic'
-],
+],*/ 
   
   plugins: [
     nodeModulesPolyfillPlugin({

@@ -11,18 +11,7 @@ await build({
   sourcemap: false,
 
   // Important: strip CDN-style version suffixes like "expect@29"
-  plugins: [
-    {
-      name: "strip-version-suffix",
-      setup(build) {
-        build.onResolve({ filter: /@/ }, args => {
-          // converts "expect@29" → "expect"
-          const cleaned = args.path.replace(/@\d+$/, "");
-          return { path: cleaned, external: false };
-        });
-      }
-    }
-  ],
+  plugins: [],
 
   logLevel: "info",
 });

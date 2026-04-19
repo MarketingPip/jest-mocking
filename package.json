@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "build": "node src/esbuild.config.mjs"
+    "build": "node src/esbuild.config.js"
   },
   "dependencies": {
     "expect": "^29.7.0",

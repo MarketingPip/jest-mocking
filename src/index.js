@@ -45,7 +45,7 @@ const xit = test.skip;
 const xtest = test.skip;
 
 // ─── mocker (SAFE USAGE) ─────────────────────────────────────────────────────
-//const mocker = new jestMock.ModuleMocker(globalThis);
+const mocker = null;
 
 // only expose safe APIs
 const jest = {

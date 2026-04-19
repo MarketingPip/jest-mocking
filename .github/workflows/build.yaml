@@ -27,7 +27,9 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: |
+          npm install patch-package
+          npm run build
 
       - name: Commit built file
         run: |

@@ -28,6 +28,7 @@ jobs:
       - name: Build
         run: |
           npm install patch-package
+          npm run postinstall
           npm ci
           npm run build
 

@@ -9,7 +9,8 @@
     "expect": "29.7.0",
     "jest-mock": "29.7.0",
     "jest-circus": "29.7.0",
-    "@sinonjs/fake-timers": "^11.2.0"
+    "@sinonjs/fake-timers": "^11.2.0",
+    "babel-runtime": "6.26.0"
   },
   "devDependencies": {
     "esbuild": "0.19.3",

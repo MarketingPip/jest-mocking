@@ -18,12 +18,6 @@ await build({
   },
 
   logLevel: "error",
-
-resolve: {
-  alias: {
-    worker_threads: "node-modules-polyfills/worker_threads"
-  }
-},
   
 /* external: [
   'worker_threads',

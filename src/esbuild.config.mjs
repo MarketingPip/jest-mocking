@@ -3,26 +3,28 @@ import { nodeModulesPolyfillPlugin } from "esbuild-plugins-node-modules-polyfill
 
 async function run() {
   await build({
-    entryPoints: ["src/index.js"],
-    outfile: "dist/jest.umd.js",
-    bundle: true,
-    format: "esm",
-    globalName: "browserJest",
-    platform: "browser",
-    target: "es2022",
-    minify: true,
-
-    define: {
-      global: "window",
-      "process.env.NODE_ENV": '"production"',
-    },
-
-    plugins: [
-      nodeModulesPolyfillPlugin({
-        globals: { process: true, Buffer: true },
-      }),
-    ],
-  });
+  bundle: true,
+  minify: true,
+  entryPoints: ["src/index.js"],
+  outfile: "dist/jest.umd.js",
+  format: 'esm',
+  define: {
+    global: 'window',
+    'process.env.NODE_ENV': '"production"',
+    'process.env.TERM': '"dumb"',
+    'process.stdout.isTTY': 'false',
+  },
+  logLevel: 'error',
+  plugins: [
+    nodeModulesPolyfillPlugin({
+      globals: {
+        process: true,
+        Buffer: true,
+      },
+    }),
+  ],
+  outdir: 'dist',
+});
 }
 
 run();

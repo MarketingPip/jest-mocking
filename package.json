@@ -6,13 +6,13 @@
     "build": "node src/esbuild.config.js"
   },
   "dependencies": {
-    "expect": "^29.7.0",
-    "jest-mock": "^29.7.0",
-    "jest-circus": "^29.7.0",
+    "expect": "29.7.0",
+    "jest-mock": "29.7.0",
+    "jest-circus": "29.7.0",
     "@sinonjs/fake-timers": "^11.2.0"
   },
   "devDependencies": {
     "esbuild": "^0.21.0",
-    "esbuild-plugins-node-modules-polyfill": "^1.6.1"
+    "esbuild-plugins-node-modules-polyfill": "1.6.1"
   }
 }

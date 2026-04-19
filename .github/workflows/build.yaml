@@ -18,20 +18,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Ensure Lockfile exists 🛠️
-        run: |
-          if [ ! -f package-lock.json ]; then
-            npm i --package-lock-only
-          fi
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
       - name: Install deps
-        run: npm ci
+        run: npm install
 
       - name: Build
         run: npm run build
